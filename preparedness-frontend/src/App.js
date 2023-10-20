@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <body><div className="entire-content">
-      <h1>Preparedness Assessment</h1>
+      <h1 className="header">Preparedness Assessment</h1>
       <div className="form">
         <div className="input">
           <Label for="name">Enter your name: </Label>
