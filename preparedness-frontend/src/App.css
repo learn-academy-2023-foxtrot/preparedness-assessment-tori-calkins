@@ -1,0 +1,54 @@
+body {
+    background-image: url("components/background-image.jpeg");
+}
+
+.header {
+    /* "Preparedness Assessment" */
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.label-text {
+    /* "enter your name:" */
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.input {
+    margin-top: 100px;
+    text-align: center;
+}
+
+Input#inputfield { /* made it an id so it'll only alter this specific input/element and not multiple lines of the App.js code */
+    font-size: 18px;
+    border: solid;
+    width: 50%; /* makes the width half the size of the page, ready to be centered now */
+    margin: auto; /* centered the items horizontally by taking in that width of 50% and splitting the rest of the space evenly between the left and right of it */
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.buttons { 
+    display: flex;
+    justify-content: center; /* centers the buttons on the page */
+    margin-top: 20px; /* moves the buttons down from touching the inputfield */
+}
+
+button#click-me-button { /* id of click-me-button is in the ModalComponent.js file because its connected to the Modal */
+    background-color: #0dcaf0;
+    width: 100px;
+    color: white;
+    margin-left: 20px; /* created the space between the buttons so no more touching */
+    padding: 10px;
+}
+
+button#reset-button {
+    background-color: #0dcaf0;
+    width: 100px;
+    color: white;
+    padding: 10px;
+}
