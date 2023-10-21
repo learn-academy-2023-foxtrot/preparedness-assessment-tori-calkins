@@ -5,30 +5,50 @@ body {
 .header {
     /* "Preparedness Assessment" */
     color: white;
-    size: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.label-text {
+    /* "enter your name:" */
+    color: white;
+    font-size: 35px;
     text-align: center;
 }
 
 .input {
-    /* "enter your name:" */
-    color: white;
-    size: 35px;
+    margin-top: 100px;
     text-align: center;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    /* width: 50%;
+Input#inputfield { /* made it an id so it'll only alter this specific input/element and not multiple lines of the App.js code */
+    font-size: 18px;
+    border: solid;
+    width: 50%; /* makes the width half the size of the page, ready to be centered now */
+    margin: auto; /* centered the items horizontally by taking in that width of 50% and splitting the rest of the space evenly between the left and right of it */
     padding-left: 12px;
-    padding-right:12px;
-    padding-top: 6px;
+    padding-right: 12px;
     padding-bottom: 6px;
-} */
+    padding-top: 6px;
+}
 
+.buttons { 
+    display: flex;
+    justify-content: center; /* centers the buttons on the page */
+    margin-top: 20px; /* moves the buttons down from touching the inputfield */
+}
+
+button#click-me-button { /* id of click-me-button is in the ModalComponent.js file because its connected to the Modal */
+    background-color: #0dcaf0;
+    width: 100px;
+    color: white;
+    margin-left: 20px; /* created the space between the buttons so no more touching */
+    padding: 10px;
+}
+
+button#reset-button {
+    background-color: #0dcaf0;
+    width: 100px;
+    color: white;
+    padding: 10px;
 }

@@ -9,7 +9,7 @@ const ModalComponent = (props) => {
 
   return (
     <div>
-      <Button color="danger" onClick={toggle}>
+      <Button id="click-me-button" onClick={toggle}>
         Click Me
       </Button>
       <Modal isOpen={modal} toggle={toggle} {...props}>
